@@ -1,28 +1,12 @@
 #include<stdio.h>
 int main()
 {
-	char ch;
-	printf("enter the character");
-	scanf("%c",&ch);
+	int i=1;
+	a:
+		printf("%d",i);
+		i++;
+		if(i<=10)
+		goto a;
+			return 0;
+}
 
-	switch(ch)
-	{
-	
-	case'a':
-	case'A':
-	case'e':
-	case'E':
-	case'i':
-	case'I':
-	case'o':
-	case'O':
-	case'u':
-	case'U':
-	printf("it is vowel");
-	break;
-	default:
-	printf("it is a consonent");
-	break;
-}
-return 0;
-}
